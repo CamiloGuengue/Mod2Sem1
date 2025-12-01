@@ -1,0 +1,35 @@
+section{
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.caja{
+    box-sizing: border-box;
+}
+#nombre{
+    background-color: beige;
+}
+#yo {
+    font-family: 'Times New Roman';
+}
+#proyectos{
+    background-color: beige;
+}
+#contacto{
+    background-color: beige;
+}
+#mascotas{
+    background-color: antiquewhite;
+    font-style: italic;
+}
+.imagenes_estilo {
+    width:  200px;
+    height: auto;
+    margin: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+.imagenes_estilo:hover {
+    transform: scale(1.50);
+    transition: transform 0.3s ease;
+}   
