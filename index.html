@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
     <title>PRESENTACION</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section id="nombre">
-        <h1>JUAN CAMILO GUENGUE PEREZ</h1>
+            <h1>JUAN CAMILO GUENGUE PEREZ</h1>
         </section>
-        <nav>
-                <p>tengo 28 años, soy hijo unico, tengo una hija de 3 años, una bulldog frances llamada toña 
-                    ,actualmente vivo con mi madre en sabaneta. me gusta la musica, el futbol y el perreo intenso
-                </p>
-            <section id="proyectos">
+
+        <nav class="nav">
+            <p>
+                tengo 28 años, soy hijo unico, tengo una hija de 3 años, una bulldog frances llamada toña,
+                actualmente vivo con mi madre en sabaneta. me gusta la musica, el futbol y el perreo intenso
+            </p>
+
+            <section id="proyectos" class="proyectos">
                 <h2>PROYECTOS</h2>
-                <ul>
+                <ul class="grid-proyectos">
                     <li><a href="https://github.com/CamiloGuengue/repositorybash">primer proyecto</a></li>
                     <li><a href="https://github.com/CamiloGuengue/Semana3Csv">segundo proyecto</a></li>
                     <li><a href="https://github.com/CamiloGuengue/crudactivity-peopleops">tercer proyecto</a></li>
                 </ul>
             </section>
+
             <section id="contacto">                
                 <h2>CONTACTO</h2>
                 <form action="correo" method="post">
-                    <label for="nombre">Nombre</label>
+                    <label for="ingreso-nombre">Nombre</label>
                     <input type="text" id="ingreso-nombre" name="nombre" required>
-                    <laber for="email">correo</laber>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">enviar</button>
-                    <br>
 
-                    <a href="mascotas.html">enlace a mascotas</a>
-                    <style>
-                        a:hover{
-                            color:black;
-                            text-decoration: underline;
-                            
-                        }
-                    </style>
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Enviar</button>
+                    <br><br>
+
+                    <a href="mascotas.html" class="link-mascotas">Enlace a mascotas</a>
                 </form>
             </section>
         </nav>

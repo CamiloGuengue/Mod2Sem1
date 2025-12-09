@@ -1,35 +1,95 @@
-section{
-    padding: 40px;
-    margin-bottom: 20px;
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
 }
-.caja{
-    box-sizing: border-box;
+
+/* ======== TASK 2 - HEADER con FLEXBOX ======== */
+.header {
+    display: flex;                 /* convierte el header en flexbox */
+    flex-direction: column;        /* elementos uno debajo de otro */
+    justify-content: center;       /* centrado vertical */
+    align-items: center;           /* centrado horizontal */
+    background: #4c84af;
+    padding: 30px;
+    color: white;
 }
-#nombre{
-    background-color: beige;
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
-#yo {
-    font-family: 'Times New Roman';
+
+/* ======== TASK 3 - SECCIÓN PROYECTOS con GRID ======== */
+.grid-proyectos {
+    display: grid;                         /* activamos grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;                              /* separación entre elementos */
+    padding: 0;
+    list-style: none;
 }
-#proyectos{
-    background-color: beige;
+
+.grid-proyectos li {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-#contacto{
-    background-color: beige;
+
+.grid-proyectos li a {
+    text-decoration: none;
+    color: #315f87;
+    font-weight: bold;
 }
-#mascotas{
-    background-color: antiquewhite;
-    font-style: italic;
+
+/* ======== ENLACE HOVER ======== */
+.link-mascotas:hover {
+    color: black;
+    text-decoration: underline;
 }
-.imagenes_estilo {
-    width:  200px;
-    height: auto;
-    margin: 10px;
-    border: 3px solid #000;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+
+/* ======== FORMULARIO ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
 }
-.imagenes_estilo:hover {
-    transform: scale(1.50);
-    transition: transform 0.3s ease;
-}   
+
+button {
+    padding: 10px;
+    background: #315f87;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #223f5b;
+}
+
+/* ======== TASK 4 - GALERÍA EN MASCOTAS ======== */
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;     /* salto de línea automático */
+    gap: 15px;
+    justify-content: center;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galeria-flex img,
+.galeria-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
