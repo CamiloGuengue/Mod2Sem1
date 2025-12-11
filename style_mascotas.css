@@ -1,0 +1,63 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #4c84af;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ======== GALERÍA FLEX ======== */
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+/* ======== GALERÍA GRID ======== */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5px;
+    justify-items: center;
+}
+
+
+
+/* ======== ESTILO DE LAS IMÁGENES ======== */
+.galeria-flex img,
+.galeria-grid img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+
+    border: 5px solid #ffffff;   /* ⭐ borde blanco individual */
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* ======== EFECTO HOVER ======== */
+.galeria-flex img:hover,
+.galeria-grid img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+a{
+    color: #ffffff;
+}
+.link-index:hover{
+    color: black;
+    text-decoration: underline;
+}
+
