@@ -78,4 +78,71 @@ a{
     font-size: 14px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body {
+    font-size: 16px; /* base */
+}
+
+h1, h2, h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* =======================
+   BREAKPOINTS
+======================= */
+
+/* ----- Móviles (max 600px) ----- */
+@media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+/* ----- Tablets (601px a 900px) ----- */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+}
+
+/* ----- Escritorio (más de 900px) ----- */
+@media (min-width: 901px) {
+
+    .grid-proyectos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
 
